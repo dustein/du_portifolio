@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: azure;
+  padding: 0.8em;
+}
+
+#i-code{
+  font-size: 1.2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.nav {
+  font-size: 1.4rem;
+}
+
+main {
+  background-color: rgb(114, 114, 114);
+  color: rgb(223, 224, 250);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  /* letter-spacing: 0.2rem; */
+  font-family: "Ubuntu", sans-serif;
+}
+
+#du {
+  font-weight: 600;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: rgb(100, 90, 240);
+  letter-spacing: 0.2rem;
+}
+
+.first {
+  background-color: #1b263b;
+  width: 100%;
+  padding: 0.8em;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+}
+
+#eduardo {
+  padding-left: 1em;
+  padding-bottom: 0.2em;
+}
+#stein {
+  padding-left: 2em;
+  padding-bottom: 0.2em;
+}
+#developer {
+  padding-left: 4.5em;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.second{
+  font-size: 2rem;
+  background-color: #415a77;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}
+
+.second h2 {
+  letter-spacing: 0.5rem;
+}
+
+.projects{
+  margin-top: 1em;
+  width: auto;
+  /* border: solid; */
+}
+
+.projects img {
+  border: solid gray;
+}
+
+.project-description {
+  font-size: 1.3rem;
+}
+
+.third{
+  padding: 1em;
+  background-color: #e0e1dd;
+  color: #1b263b;
+  width: 100%;
+  text-align: center;
+}
+
+.third li {
+  padding: 0.5em;
+  font-style: italic;
+}
+
+.botton-links {
+  padding-left: 0.5rem;
+}
+
+footer {
+  background-color: black;
+  color: azure;
+  width: 100%;
+  text-align: center;
+  padding: 0.6em;
+}
+
+@media (min-width: 400px) {
+
+  html {
+    font-size: 1.5rem;
+  }
+
+  .first {
+    padding: 1.5em;
+    font-size: 3.5rem;
+    height: 90vh;
+  }
+
+  #developer {
+    font-size: 2rem;
+  }
+  
+  .second {
+    height: 100vh;
+  }
+
+  .sec-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.5rem;
+  }
+  
+}
