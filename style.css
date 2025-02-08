@@ -3,7 +3,8 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* ----------------------------------- */
+/* HEADER CONFIG START */
 header {
   width: 100%;
   display: flex;
@@ -25,6 +26,16 @@ li {
 .nav {
   font-size: 1.4rem;
 }
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+/* HEADER CONFIG END */
+/* -------------------------------------- */
 
 main {
   background-color: rgb(114, 114, 114);
@@ -122,10 +133,14 @@ footer {
   padding: 0.6em;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 800px) {
 
   html {
     font-size: 1.5rem;
+  }
+
+  #hamburger {
+    display: none;
   }
 
   .first {
