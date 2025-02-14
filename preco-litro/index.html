@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HWJ6BH7LDT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HWJ6BH7LDT');
+</script>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melhor Preço da Cerveja</title>
+</head>
+
+<body>
+
+  <section class="first">
+
+    <div class="titulo">
+      <h1>Calculadora de Preço da Cerveja</h1>
+      <h2>CALCULO DE CERVEJA MODIFICANDO</h2>
+    </div>
+    
+    <div class="tipos">
+      
+      <div class="unidade" data-key="250" data-tipo="Latinha" id="ml250lata">
+        <img src="midia/full-lata_250ml.jpg" alt="Latinha 250ml">
+        <!-- <div class="nomeUnidade">
+          <span id="lataGarrafa">Latinha</span>
+          <span>250 ml</span>
+        </div> -->
+      </div>
+
+      <div class="unidade" data-key="250" id="ml250garrafa" data-tipo="Long Neck">
+        <img src="midia/full-garrafa_250ml.jpg" alt="Garrafinha 250ml">
+
+        <!-- <div class="nomeUnidade">
+          <span id="lataGarrafa">Long Neck</span>
+          <span>250 ml</span>
+        </div> -->
+      </div>
+
+      <div class="unidade" data-key="355" data-tipo="Lata" id="ml355lata">
+        <img src="midia/full-lata_355ml.jpg" alt="Lata 355ml">
+
+        <!-- <div class="nomeUnidade">
+          <span id="lataGarrafa">Lata</span>
+          <span>355 ml</span>
+        </div> -->
+      </div>
+
+      <div class="unidade" data-key="330" data-tipo="Long Neck" id="ml330garrafa">
+        <img src="midia/full-garrafa_330ml.jpg" alt="Long Neck 330ml">
+
+        <!-- <div class="nomeUnidade">
+          <span id="lataGarrafa">Long Neck</span>
+          <span>330 ml</span>
+        </div> -->
+      </div>
+
+      <div class="unidade" data-key="473" data-tipo="Latão" id="ml473lata">
+        <img src="midia/full-lata_473ml.jpg" alt="Latão 473ml">
+
+        <!-- <div class="nomeUnidade">
+          <span id="lataGarrafa">Latão</span>
+          <span>473 ml</span>
+        </div> -->
+      </div>
+
+      <div class="unidade" data-key="600" data-tipo="Garrafa" id="ml600garrafa">
+        <img src="midia/full-garrafa_600ml.jpg" alt="Garrafa 600ml">
+
+        <!-- <div class="nomeUnidade">
+          <span id="lataGarrafa">Garrafa</span>
+          <span>600 ml</span>
+        </div> -->
+      </div>
+
+    </div>
+    
+    <div class="botoes-inicial">
+      
+      <button id="calcular" onclick="calcular()" type="button">Calcular</button>
+      <button id="limpar" onclick="window.location.reload()" type="button">Reset</button>
+    
+    </div>
+    
+    <div id="first-footer">
+      <p>&copy; DuStein</p>
+    </div>
+
+  </section>
+
+  <div id="result-modal" class="modal">
+    <div class="result-conteudo">
+      <h2>Resultado</h2>
+      <h3>Melhor Custo x Benefício</h3>
+      <p>Unidade mais em conta:</p>
+        
+      <div class="mostra-tipo">
+        <span id="melhorTipo"></span>
+        <span id="melhorUnidade"></span> ml por R$  
+        <span id="melhorPreco"></span>.
+      </div>
+        
+      <p>Preço por litro: R$ <span id="melhorPrecoLitro"></span></p>
+      <button id="reiniciar" onClick="window.location.reload()">Reiniciar</button>
+    </div>
+  </div>
+
+  <section class="second">
+    <h2>Embalagem com Melhor Custo Benefício</h2>
+    <p>Está no mercado comprando cerveja, e com tantas opções não sabe qual tamanho de latinha ou garrafa está mais em conta?</p>
+    <p>Latinha, latão, ou long neck? Garrafa de 600 ou Litrão? Qual sai mais barato?</p>
+    <p>Com esta aplicação, vamos calcular facilmente o preço por litro de cada tamanho de embalagem para ver a mais barata: a que tem mais cerveja por menos dinheiro.</p>
+    <p>Clique em "Calcular" para iniciar e fazer o cálculo e economizar na cerveja!</p>
+    <p>Como funciona este App: este aplicativo calcula quanto é o preço por litro de cada embalagem / tamanho de cerveja você informar. Ao final, como resultado, você vai saber qual tamanho sai mais barato para comprar mais cerveja pagando menos, gastando menos. Comparar preço com quantidade.</p>
+
+  </section>
+
+</body>
+</html>
