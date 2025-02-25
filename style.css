@@ -3,6 +3,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: #e0e1dd;
+}
+
+a:hover {
+  color: rgb(100, 90, 240);
+}
+
 /* ----------------------------------- */
 /* HEADER CONFIG START */
 header {
@@ -108,7 +118,9 @@ main {
   font-size: 1.3rem;
 }
 
-.third{
+/* THIRD SECTION start */
+
+.third {
   padding: 1em;
   background-color: #e0e1dd;
   color: #1b263b;
@@ -121,10 +133,21 @@ main {
   font-style: italic;
 }
 
+.third a {
+  color: #1b263b;
+  padding: 0.5rem;
+}
+
+.third a:hover {
+  background-color: #1b263b;
+  color: #e0e1dd;
+}
+
 .botton-links {
   padding-left: 0.5rem;
 }
 
+/* THIRD SECTION end */
 footer {
   background-color: black;
   color: azure;
