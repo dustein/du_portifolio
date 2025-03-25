@@ -5,10 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <!-- <link href="/static/favicon.ico" rel="icon"> -->
-    <link rel= "stylesheet" type= "text/css" href= "./static/css/style.css">
+    <link rel= "stylesheet" type= "text/css" href= "static/style.css">
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-      </style>
+    </style>
+    <script>
+      function menuToggle() {
+        let menu = document.querySelector(".links-menu");
+        if (menu.style.display === "flex") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "flex";
+        }
+      }
+    </script>
     <title>
       Adiante 
 | Pagina de Teste
@@ -18,11 +28,41 @@
 
   <body>
     <header>
-      <div id="area_logo">
-        <div id="logo">Adiante</div>
-        <div id="sub-logo">Aprender, Criar, Realizar</div>
+          
+      <div class="area-logo">
+        <div id="logo-area">
+          <div id="logo">Adiante</div>
+          <div class="play">>></div>
+          <!-- <img class="play" src="/static/play-svgrepo-com.svg" alt=""> -->
+        </div>
+        <div id="sub-logo">Learn & Create</div>
       </div>
-      <img id="hamburger" src="./static/css/burger-menu-svgrepo-com.svg" alt="">
+      <div class="area-menu">
+        <ul class="links-menu">
+          <a href="">
+            <li>Inicial</li>
+          </a>
+          <a href="">
+            <li>DuStein</li>
+          </a>
+          <a href="">
+            <li>Contato</li>
+          </a>
+        </ul>
+        <a href="javascript:void(0);" onclick="menuToggle()"><img id="hamburger" src="static/burger-menu-svgrepo-com.svg" alt=""></a>
+        <ul class="links-menu-800">
+          <a href="">
+            <li>Inicial</li>
+          </a>
+          <a href="">
+            <li>DuStein</li>
+          </a>
+          <a href="">
+            <li>Contato</li>
+          </a>
+        </ul>
+
+      </div>
     </header>
     
     <main>
