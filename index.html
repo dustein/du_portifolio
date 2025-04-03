@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DuStein - developer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="static/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/e3f0f30529.js" crossorigin="anonymous" defer></script>
+  <script>
+    function menuToggle() {
+      let menu = document.querySelector(".links-menu");
+      if (menu.style.display === "flex") {
+        menu.style.display = "none";
+      } else {
+        menu.style.display = "flex";
+      }
+    }
+  </script>
 </head>
 <body>
   <header>
@@ -18,20 +28,43 @@
     </div>
 
     <div class="nav">
-      <ul class="nav-links">
-        <i id="hamburger" class="fa-solid fa-bars"></i>
-        <li><i class="fa-regular fa-envelope"></i><span class="botton-links"><a href="...">e-Mail</a></span></li>
-        <li><i class="fa-brands fa-linkedin"></i><span class="botton-links"><a href="https://www.linkedin.com/in/eduardo-s-7723701a3/">LinkedIn</a></span></li>
-        <li><i class="fa-brands fa-github"></i><span class="botton-links"><a href="https://github.com/dustein">Github</a></span></li>
+      <ul class="links-menu">
+        <a href="">
+          <li>Inicial</li>
+        </a>
+        <a href="">
+          <li>DuStein</li>
+        </a>
+        <a href="">
+          <li>Contato</li>
+        </a>
       </ul>
-    </div>
+      <a href="javascript:void(0);" onclick="menuToggle()"><img id="hamburger" src="static/burger-menu-svgrepo-com.svg" width="10" height="10" alt="menu icon"></a>
+      <ul class="links-menu-800">
+        <a href="#">
+          <li>Inicial</li>
+        </a>
+        <a href="https://dustein.com">
+          <li>DuStein</li>
+        </a>
+        <a href="#">
+          <li>Contato</li>
+        </a>
+      </ul>    </div>
 
   </header>
   <main>
     <div class="first">
-      <p id="eduardo">Eduardo</p>
-      <p id="stein">Stein</p>
-      <h1 id="developer">developer</h1>
+      <div class="palavras">
+        <p id="eduardo">Eduardo</p>
+        <p id="stein">Stein</p>
+        <h1 id="developer">developer</h1>
+        <p id="description">I'm a Full Stack Software Engineer who loves Front End and passionate abut Back End.</p>
+      </div>
+      <div class="imagem-fundo">
+        <img src="static/g261.svg" alt="">
+      </div>
+
     </div>
     <div class="second">
       <h2>Projects</h2>

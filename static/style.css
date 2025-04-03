@@ -17,8 +17,6 @@ a:hover {
 /* HEADER CONFIG START */
 header {
   width: 100%;
-  position: sticky;
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -35,29 +33,6 @@ li {
   list-style: none;
 }
 
-.nav {
-  font-size: 1.4rem;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  margin-right: 1rem;
-}
-
-/* HEADER CONFIG END */
-/* -------------------------------------- */
-
-main {
-  background-color: rgb(114, 114, 114);
-  color: rgb(223, 224, 250);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .logo {
   font-size: 1.5rem;
   /* letter-spacing: 0.2rem; */
@@ -72,27 +47,124 @@ main {
   letter-spacing: 0.2rem;
 }
 
+.nav {
+  font-size: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  margin-right: 1rem;
+}
+
+#hamburger {
+  background-color: azure;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+  margin: 0.5rem;
+}
+
+#hamburger:hover {
+  background-color: #ffa600c4;
+}
+
+.area-menu {
+  display: flex;
+  align-items: center;
+  padding-right: 1.5rem;
+  position: relative;
+}
+
+.links-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.3rem;
+  list-style: none;
+  position: absolute;
+  top: 4.5rem;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.links-menu-800 {
+  display: none;
+}
+
+.nav .links-menu {
+  display: none;
+}
+
+/* HEADER CONFIG END */
+/* -------------------------------------- */
+
+main {
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat;
+  color: rgb(223, 224, 250);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
 .first {
+  display: flex;
   background-image: linear-gradient(to bottom, #2c3e50, #1b263b);
+  /* background-image: url("g261.svg");
+  opacity: 0.05; */
   width: 100%;
+  height: 100vh;
   padding: 0.8em;
   font-size: 2rem;
   letter-spacing: 0.3rem;
 }
 
+.palavras {
+  position: absolute;
+  z-index: 1;
+  font-size: 3rem;
+}
+
+.imagem-fundo {
+  z-index: 0;
+  position: absolute;
+  right: 0;
+  opacity: 0.5;
+}
+
+.imagem-fundo img {
+  height: 50vh
+}
+
 #eduardo {
-  padding-left: 1em;
-  padding-bottom: 0.2em;
+  font-size: 2.5rem;
+  padding-bottom: 0.3rem;
 }
 #stein {
-  padding-left: 2em;
+  font-size: 3.5rem;
+  padding-left: 2rem;
   padding-bottom: 0.2em;
 }
 #developer {
-  padding-left: 4.5em;
-  font-size: 1.3rem;
+  padding-left: 3em;
+  font-size: 2rem;
   font-style: italic;
+  padding-bottom: 1.5rem;
 }
+#description {
+  font-size: 1rem;
+  text-align: justify;
+  padding-right: 5rem;
+}
+
 
 .second{
   font-size: 2rem;
@@ -167,6 +239,15 @@ footer {
 
   #hamburger {
     display: none;
+  }
+
+  .links-menu-800 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    list-style: none;
+    padding-right: 1.5rem;  
   }
 
   .first {
