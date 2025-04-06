@@ -1,208 +1,231 @@
-body {
+#pallete {
+  color: #e4c1f9;
+  color: #a9def9;
+  color: #d0f4de;
+  color: #fcf6bd;
+  color: #ff99c8;
+}
+
+* {
   margin: 0;
   padding: 0;
-  background-color: rgb(177, 238, 238);
-  text-align: center;
-  height: 100vh;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 360px;
+}
+
+body {
+  background-color: #fcf6bd;
+  background-image: linear-gradient(#f6f3db, #faec6a);
   height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  border: 4px solid transparent;
 }
 
-#header {
+header {
+  background-color: #e4c1f9;
+  color: rgb(38, 38, 38);
   text-align: center;
-  padding-bottom: 0.5rem;
-}
-
-#desafie {
-  font-size: 1.2rem;
-  font-style: italic;
-  margin: 0;
-  padding-top: 0.3rem;
-}
-
-h1 {
-  font-size: 1rem;
-  text-shadow: 2px 2px rgb(241, 179, 224);
-  margin: 0.3rem;
-}
-
-h2 {
-  margin: 0;
-  padding-bottom: 1rem;
-  font-size: 1rem;
-}
-
-p {
-  font-size: 0.8rem;
-}
-
-#dinamica {
-  min-height: 240px;
-  flex-grow: 1;
-}
-
-#jogadas {
   padding: 0.5rem;
-  border: solid;
-  border-color:rgb(206, 248, 234);
-  background-color: rgb(233, 229, 202);
 }
 
-#jogada {
-  padding: 0.5rem;
-  background-color: rgb(241, 179, 224);
-  padding: 1rem;
+header h1 {
+  text-shadow: 1px 1px rgba(238, 19, 180, 0.81);
+  font-size: 1.8rem;
 }
 
-#video {
-  background-color: rgb(177, 238, 238);
-  margin: 0;
-}
-
-video {
-  border-radius: 60px;
-  border: solid;
-  border-color: rgb(241, 179, 224);
-  max-height: 180px;
-  margin: 5px;
-}
-
-#botoesJogo {
-  background-color: rgb(101, 101, 138);
+main {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
 }
 
-.botoes {
-  background-color: black;
-  color: rgb(249, 242, 242);
-  border-radius: 16px;   
+.jogadaUser {
+  background-color: #ff99c8;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.5rem;
+  width: 100%;
+}
+
+#aguardando {
+  animation: pulse 2s infinite;
+}
+
+.videoArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  height: 50%;
+  text-align: center;
+  width: 80%;
+  color: rgb(120, 122, 241);
+  font-size: 2rem;
+  text-shadow: 4px 3px rgba(241, 179, 224, 0.916);
+  border: 5px solid transparent;
+  border-radius: 5px;
+  background-color: rgba(88, 182, 189, 0.629);
+  background-image: linear-gradient(to bottom right, rgb(179, 232, 214), rgb(43, 224, 164)), linear-gradient(125deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.6) 50%, rgba(235, 212, 212, 0) 53%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-size: 100%, 200%;
+  background-position: 0px, -250px;
+  animation: 4s border-glint linear backwards infinite;
+  animation-delay: 1s;
+  box-shadow: rgba(79, 79, 79, 0.6) 8px 8px 8px;
+  text-shadow: 0px 0px 4px rgba(255,255,255,0.1);
+  transition: box-shadow 0.25s, text-shaddw 0.25s;
+  overflow: hidden;
+}
+
+#subVideo {
+  width: 100%;
+}
+#jogadaMaquina {
+  background-color: #a9def9;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  letter-spacing: 0.5rem;
+  font-weight: 600;
+}
+
+#resultadoJogada {
+  background-color: #ff99c8;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* BOTOES DE COMANDO START */
+#botaoJogar {
+  padding: 2rem;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.botoesJogo {
+  /* position: absolute;
+  bottom: 1rem; */
+  display: flex;
+  justify-content: space-between;
+  gap: 1.3rem;
+  padding: 0.5rem;
+  align-self: baseline;
+  opacity: 0.5;
 }
 
 .btnImage {
-  width: 4rem;
-  min-width: auto;
-  padding: 0.1rem 0.3rem 0.1rem;
-  margin: 0.4rem;
-  background-color: rgb(53, 34, 98);
-  border-radius: 24px;
-}
-
-.btnImage:hover {
-  background-color: brown;
-  border-radius: 24px;
-}
-
-figcaption {
-  font-size: 1rem;
-  margin: -0.5rem 0 0.5rem;
-  color: aliceblue;
-  font-weight: 800;
-}
-
-.botoes:hover {
-  background-color: rgb(53, 34, 98);
-}
-
-#placar {
-  padding: 1rem 0 1rem;
-  font-style: italic;
-  font-weight: 800;
-  min-height: 1rem;
-  font-size: 0.8rem;
-  background-color: aliceblue;
-}
-
-#reiniciar {
-  background-color: rgb(220, 239, 157);
-  color: rgb(26, 24, 24);
-  padding: 0.5rem;
-}
-
-#reiniciar:hover {
-  background-color: blue;
-  color: white;
-  padding: 0.5rem;
-}
-
-/* The Modal (background) */
-.pop {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 1s;
-  animation-name: fadeIn;
-  animation-duration: 1s
-}
-
-/* Modal Content */
-.pop-content {
-  position: fixed;
-  bottom: 0;
-  background-color: #fefefe;
   width: 100%;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
-  animation-duration: 0.4s
-}
-
-.pop-header {
-  padding: 20px 16px;
+  height: auto;
   background-color: rgb(53, 34, 98);
-  color: white;
-  font-size: 2rem;
-}
-
-.pop-text {
-  padding: 10px 16px;
-}
-
-.pop-text2 {
-  padding: 10px 16px;
-}
-
-.pop-botao {
-  padding: 10px 16px;
-  background-color: rgb(241, 179, 224)
-}
-
-#btn-restart {
-  background-color: blueviolet;
-  color: white;
-  padding: 0.5rem 1rem;
   border-radius: 24px;
 }
 
-/* Add Animation */
-@-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0} 
-  to {bottom: 0; opacity: 1}
+.botoes {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
+.botoes p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding-top: 0.3rem;
+}
+/* BOTOES DE COMANDO END */
+
+footer {
+  background-color: #feb5d7;
+  color: rgb(69, 69, 69);
+  line-height: 2rem;
+  text-align: center;
 }
 
-@-webkit-keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
+/* EFEITOS ACESSORIOS:::::: */
+
+/* EFEITOS BOTAO JOGAR */
+#botaoJogar {
+  width: fit-content;
+  position: relative;
+  margin: 2rem;
+  padding: 1rem 1.5rem;
+  color: rgb(120, 122, 241);
+  text-shadow: 4px 3px rgba(241, 179, 224, 0.916);
+  border: 5px solid transparent;
+  border-radius: 60px;
+  background-color: rgba(88, 182, 189, 0.629);
+  background-image: linear-gradient(to bottom right, rgb(179, 232, 214), rgb(43, 224, 164)), linear-gradient(125deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.6) 50%, rgba(235, 212, 212, 0) 53%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  background-size: 100%, 200%;
+  background-position: 0px, -250px;
+  animation: 4s border-glint linear backwards infinite;
+  animation-delay: 1s;
+  box-shadow: rgba(79, 79, 79, 0.6) 8px 8px 8px;
+  text-shadow: 0px 0px 4px rgba(255,255,255,0.1);
+  transition: box-shadow 0.25s, text-shaddw 0.25s;
+  overflow: hidden;
 }
 
-@keyframes fadeIn {
-  from {opacity: 0} 
-  to {opacity: 1}
+#botaoJogar:hover {
+  cursor: pointer;
+  color: rgb(235, 12, 164);
+  box-shadow: rgba(0,0,0,0.7) 5px 5px 5px;
+  text-shadow: 0px 0px 3px rgba(255,255,255,0.7);
+  transition: box-shadow 0.25s, text-shaddw 0.25s;
+}
+
+#botaoJogar::after {
+  content: ' ';
+  position: absolute;
+  top: -50%;
+  left: -120%;
+  width: 200%;
+  height: 200%;
+  background-image: linear-gradient(125deg, rgba(247, 18, 18, 0) 30%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0) 52%);
+  animation: 4s glint linear backwards infinite;
+  animation-delay: -3s;
+}
+
+@keyframes glint {
+  0% { left: -120%; }
+  8% { left: 50%; }
+  100% { left: 50%; }
+}
+
+@keyframes border-glint {
+  0% { background-position: 0px, -250px; }
+  25% { background-position: 0px, -200px; }
+  75% { background-position: 0px, 50px; }
+  100% { background-position: 0px, 50px; }
+}
+
+/* EFEITO PULSE NO TEXTO */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    color: #faec6a;
+  }
+  50% {
+    transform: scale(1.1);
+    color: #4d0577;
+  }
+  100% {
+    transform: scale(1);
+    color: #ff99c8;
+  }
 }

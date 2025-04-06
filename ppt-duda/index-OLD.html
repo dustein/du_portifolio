@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <script src="script.js" defer></script>
+   <link rel="stylesheet" href="style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Pedra - Papel - Tesoura</title>
+</head>
+
+<body>
+
+   <header>
+      <h2 id="desafie">Desafie a Duda !</h2>
+      <h1>Pedra, Papel, Tesoura</h1>
+   </header>
+
+   <div id="dinamica">
+   
+      <div>
+         <div id="jogadas"></div>
+
+         <div id="video"></div>
+      </div>
+   
+      <div id="jogada">Clique em uma Jogada !</div>
+   
+   </div>
+   
+   <div id="botoesJogo">
+   
+      <div id="botoes">
+         <img class="btnImage" id="pedra" src="./midia/botao-pedra.png" alt=""><figcaption>Pedra</figcaption>
+      </div>
+      <div id="botoes">
+         <img class="btnImage"  id="papel" src="./midia/botao-papel.png" alt=""><figcaption>Papel</figcaption>
+      </div>
+      <div id="botoes">
+         <img class="btnImage"  id="tesoura" src="./midia/botao-tesoura.png" alt=""><figcaption>Tesoura</figcaption>
+      </div>
+   
+   </div>
+
+   <!-- <div id="rodada"></div>
+   
+   <div id="placar"></div>
+   
+   <div id="reiniciar"></div> -->
+
+   <!-- modal pop up fim de jogo -->
+   <div id="popFim" class="pop">
+      <!-- Modal content -->
+      <div class="pop-content">
+        
+         <div class="pop-header">
+          <h2>pop result</h2>
+        </div>
+        
+        <div class="pop-text">
+          <p>pop text</p>
+        </div>
+        <div class="pop-text2">
+         <p>Placar</p>
+        </div>
+        
+        <div class="pop-botao">
+         <button id="btn-restart">De Novo !</button>
+        </div>
+      
+      </div>
+    
+    </div>
+
+</body>
+
+</html>

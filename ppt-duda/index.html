@@ -1,76 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <script src="script.js" defer></script>
-   <link rel="stylesheet" href="style.css">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Pedra - Papel - Tesoura</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Pedra Papel Tesoura</title>
 </head>
-
 <body>
+  <header>
+    <h2>Desafie a Duda !</h2>
+    <h1>Pedra, Papel, Tesoura</h1>
+  </header>
 
-   <div id="header">
-      <h3 id="desafie">Desafie a Duda !</h3>
-      <h1>Pedra, Papel, Tesoura</h1>
-   </div>
+  <main class="gameArea">
 
-   <div id="dinamica">
-   
-      <div id="jogadas"></div>
-   
-      <div id="video"></div>
-   
-      <div id="jogada">Clique em uma Jogada !</div>
-   
-   </div>
-   
-   <div id="botoesJogo">
-   
-      <div id="botoes">
-         <img class="btnImage" id="pedra" src="./midia/botao-pedra.png" alt=""><figcaption>Pedra</figcaption>
-      </div>
-      <div id="botoes">
-         <img class="btnImage"  id="papel" src="./midia/botao-papel.png" alt=""><figcaption>Papel</figcaption>
-      </div>
-      <div id="botoes">
-         <img class="btnImage"  id="tesoura" src="./midia/botao-tesoura.png" alt=""><figcaption>Tesoura</figcaption>
-      </div>
-   
-   </div>
-
-   <div id="rodada"></div>
-   
-   <div id="placar"></div>
-   
-   <div id="reiniciar"></div>
-
-   <!-- modal pop up fim de jogo -->
-   <div id="popFim" class="pop">
-      <!-- Modal content -->
-      <div class="pop-content">
-        
-         <div class="pop-header">
-          <h2>pop result</h2>
-        </div>
-        
-        <div class="pop-text">
-          <p>pop text</p>
-        </div>
-        <div class="pop-text2">
-         <p>Placar</p>
-        </div>
-        
-        <div class="pop-botao">
-         <button id="btn-restart">De Novo !</button>
-        </div>
-      
-      </div>
+    <!-- <button id="botaoJogar" onclick="startGame()"><p>Clique</p><p>para</p><p>Jogar</p></button> -->
     
+    <div class="jogadaUser"><p>Você escolheu XXXX. </p><p>Duda escolheu...</p></div>
+
+    <div class="videoArea"><p id="aguardando">Aguardando ...</p></div>
+
+    <div id="subVideo">
+      <div id="jogadaMaquina">TESOURA!</div>
+      
+      <div id="resultadoJogada">Tesoura corta papel voce perdeu</div>
     </div>
 
-</body>
+    <div class="botoesJogo">   
+      <div class="botoes">
+        <img class="btnImage" id="pedra" src="./midia/botao-pedra.png" alt="">
+        <p>Pedra</p>
+      </div>
+      <div class="botoes">
+          <img class="btnImage"  id="papel" src="./midia/botao-papel.png" alt="">
+          <p>Papel</p>
+      </div>
+      <div class="botoes">
+          <img class="btnImage"  id="tesoura" src="./midia/botao-tesoura.png" alt="">
+          <p>Tesoura</p>
+      </div>
 
+  </main>
+  
+  <footer>
+    Um jogo por @DuStein
+  </footer>
+
+</body>
 </html>
