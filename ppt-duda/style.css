@@ -39,6 +39,7 @@ header h1 {
 }
 
 .gameArea {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,10 +60,17 @@ header h1 {
   animation: pulse 2s infinite;
 }
 
+#arrow-down {
+  width: 40%;
+  opacity: 0.4;
+  padding-top: 4rem;
+}
+
 .videoArea {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border: solid;
   height: 50%;
   aspect-ratio: 9 / 16;
@@ -99,6 +107,7 @@ header h1 {
 
 #subVideo {
   width: 100%;
+  display: none;
 }
 
 #jogadaMaquina {
