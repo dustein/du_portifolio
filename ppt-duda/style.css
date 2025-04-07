@@ -38,7 +38,7 @@ header h1 {
   font-size: 1.8rem;
 }
 
-main {
+.gameArea {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -65,10 +65,10 @@ main {
   align-items: center;
   border: solid;
   height: 50%;
+  aspect-ratio: 9 / 16;
   text-align: center;
-  width: 80%;
   color: rgb(120, 122, 241);
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-shadow: 4px 3px rgba(241, 179, 224, 0.916);
   border: 5px solid transparent;
   border-radius: 5px;
@@ -86,9 +86,21 @@ main {
   overflow: hidden;
 }
 
+#div-arco {
+  position: absolute;
+  top: 0.3rem;
+  left: 0.2rem;
+  opacity: 0.5;
+}
+
+#arco-iris {
+  width: 30%;
+}
+
 #subVideo {
   width: 100%;
 }
+
 #jogadaMaquina {
   background-color: #a9def9;
   width: 100%;
@@ -99,6 +111,7 @@ main {
 }
 
 #resultadoJogada {
+  font-size: 1.5rem;
   background-color: #ff99c8;
   width: 100%;
   text-align: center;
@@ -115,13 +128,11 @@ main {
 }
 
 .botoesJogo {
-  /* position: absolute;
-  bottom: 1rem; */
   display: flex;
   justify-content: space-between;
+  max-width: 30rem;
   gap: 1.3rem;
   padding: 0.5rem;
-  align-self: baseline;
   opacity: 0.5;
 }
 

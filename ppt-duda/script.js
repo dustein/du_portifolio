@@ -8,3 +8,4 @@ function startGame() {
   botoesJogo.style.opacity = "1";
   // const VideoArea = document.createElement()
 }
+
