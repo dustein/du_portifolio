@@ -92,10 +92,10 @@ header h1 {
 }
 
 #legenda-video {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #4d0577;
   font-weight: 800;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
 }
 
 #jogadaMaquina {
@@ -336,5 +336,17 @@ footer {
   100% {
     transform: scale(1);
     color: #ff99c8;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    max-width: 800px;
+    background-color: #4d0577;
+    margin: auto;
+  }
+
+  html {
+    background-color: #403547;
   }
 }
