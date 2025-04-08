@@ -7,7 +7,7 @@
   <script src="script.js" defer></script>
   <title>Pedra Papel Tesoura</title>
 </head>
-<body>
+<body class="corpo">
   <header>
     <h2>Desafie a Duda !</h2>
     <h1>Pedra, Papel, Tesoura</h1>
@@ -18,35 +18,54 @@
 
     <button id="botaoJogar" onclick="startGame()"><p>Clique</p><p>para</p><p>Jogar</p></button>
     
-    <!-- <div class="jogadaUser"><p>Você escolheu XXXX. </p><p>Duda escolheu...</p></div> -->
+    <div class="jogadaUser"><p>Escolha sua Jogada !</p></div>
 
-    <!-- <div class="videoArea">
-      <div id="aguardando">
-        <p>Aguardando ...</p>
-        <img id="arrow-down" src="midia/arrow-down.svg" alt="arrow down">
+    <div class="videoArea">
+      <div class="aguardando">
+        <p>Aguardando ...</br><span style='writing-mode: vertical-rl;'>>>></span></p>
       </div>
-    </div> -->
+    </div>
     
     <div id="subVideo">
-      <div id="jogadaMaquina">TESOURA!</div>
+      <!-- <div id="jogadaMaquina"><span class="aguardando" style='writing-mode: vertical-rl;'>></span></div> -->
       
-      <div id="resultadoJogada">Tesoura corta papel voce perdeu</div>
+      <div id="resultadoJogada"><span class="aguardando" style='writing-mode: vertical-rl;'>></span></div>
+
+      <div class="placar"><span class="aguardando" style='writing-mode: vertical-rl;'>></span></div>
     </div>
 
     <div class="botoesJogo">   
       <div class="botoes">
-        <img class="btnImage" id="pedra" src="./midia/botao-pedra.png" alt="">
+        <img class="btnImage" id="pedra" src="./midia/botao-pedra.png" alt="botao pedra">
         <p>Pedra</p>
       </div>
       <div class="botoes">
-          <img class="btnImage"  id="papel" src="./midia/botao-papel.png" alt="">
+          <img class="btnImage"  id="papel" src="./midia/botao-papel.png" alt="botao papel">
           <p>Papel</p>
       </div>
       <div class="botoes">
-          <img class="btnImage"  id="tesoura" src="./midia/botao-tesoura.png" alt="">
+          <img class="btnImage"  id="tesoura" src="./midia/botao-tesoura.png" alt="botao tesoura">
           <p>Tesoura</p>
       </div>
 
+     <!-- modal pop up fim de jogo -->
+     <div id="popFim" class="pop">
+      <!-- Modal content -->
+      <div class="pop-content">
+        <div class="pop-header">
+          <h2>pop result</h2>
+        </div>
+        <div class="pop-text">
+          <p>pop text</p>
+        </div>
+        <div class="pop-text2">
+         <p>Placar</p>
+        </div>
+        <div class="pop-botao">
+         <button id="btn-restart">De Novo !</button>
+        </div>
+      </div>
+    </div>
   </main>
   
   <footer>
