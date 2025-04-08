@@ -121,7 +121,7 @@ function executa_game() {
         computer = computerPlay();
         jogadaUser.innerHTML = `Você escolheu <strong>${user}</strong>. Duda escolheu ...`
 
-        videoArea.innerHTML = `<video autoplay height="240"><source src="${computerVideo[computer].source}" type="video/mp4"></video></br><p id="legenda-video">${computerVideo[computer].titulo}</p>`
+        videoArea.innerHTML = `<video autoplay id="videoDimensao"><source src="${computerVideo[computer].source}" type="video/mp4"></video></br><p id="legenda-video">${computerVideo[computer].titulo}</p>`
         
         //vencedor recebe o ponto atribuido pelo gameRules
         vencedor = gameRules(user, computer);
