@@ -181,17 +181,35 @@ footer {
 /* EFEITOS ACESSORIOS:::::: */
 
 /* MODAL START */
+.pop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */  
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-duration: 3s
+}
+
 /* Modal Content */
 .pop-content {
   position: fixed;
-  bottom: 0;
+  top: 50%;
   left: 0;
   background-color: #fefefe;
   width: 100%;
   -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
+  -webkit-animation-duration: 4.5s;
   animation-name: slideIn;
-  animation-duration: 0.4s
+  animation-duration: 0.4s;
+  text-align: center;
 }
 
 .pop-header {
@@ -202,23 +220,55 @@ footer {
 }
 
 .pop-text {
-  padding: 10px 16px;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .pop-text2 {
-  padding: 10px 16px;
+  font-size: 1.2rem;
+  font-style: italic;
+  letter-spacing: 0.15rem;
+  padding: 1rem;
 }
 
 .pop-botao {
-  padding: 10px 16px;
+  padding: 1rem;
   background-color: rgb(241, 179, 224)
 }
 
 #btn-restart {
   background-color: blueviolet;
   color: white;
-  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  padding: 1rem 2rem;
   border-radius: 24px;
+}
+
+#btn-restart:hover {
+  background-color: #e4c1f9;
+  color: #4d0577;
+}
+
+
+/* Add Animation pro Modal */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
 }
 /* MODAL END */
 
