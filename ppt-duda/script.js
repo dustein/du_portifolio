@@ -67,36 +67,36 @@ function executa_game() {
         }
         //pedra x papel
         if(user === 'pedra' && computer === 'papel') {
-          resultadoJogada.innerHTML = 'Papel enrola pedra... você perdeu'
-          played = 'Papel enrola Pedra...'
+          resultadoJogada.innerHTML = '<p>Papel enrola pedra</p><p>Você perdeu...</p>'
+          // played = 'Papel enrola Pedra...'
         } else if (user === 'papel' && computer === 'pedra') {
-          resultadoJogada.innerText = 'Papel enrola Pedra, você VENCEU'
+          resultadoJogada.innerHTML = '<p>Papel enrola Pedra</p><p>Você VENCEU !</p>'
           point = 1
-          played = 'Papel enrola Pedra...'
+          // played = 'Papel enrola Pedra...'
         }
         //pedra x tesoura
         else if (user === 'pedra' && computer === 'tesoura') {
-          resultadoJogada.innerText = 'Pedra quebra Tesoura, você VENCEU'
+          resultadoJogada.innerHTML = '<p>Pedra quebra Tesoura</p><p>Você VENCEU !</p>'
           point = 1
-          played = 'Pedra quebra a Tesoura...'
+          // played = 'Pedra quebra a Tesoura...'
         } else if (user === 'tesoura' && computer === 'pedra') {
-          resultadoJogada.innerText = 'Pedra quebra Tesoura, você perdeu'
-          played = 'Pedra quebra a Tesoura...'
+          resultadoJogada.innerHTML = '<p>Pedra quebra Tesoura</p><p>Você perdeu...</p>'
+          // played = 'Pedra quebra a Tesoura...'
         }
         //tesoura x papel
         else if (user === 'tesoura' && computer === 'papel') {
-          resultadoJogada.innerText = 'Tesoura corta Papel, você VENCEU'
+          resultadoJogada.innerHTML = '<p>Tesoura corta Papel</p><p>Você VENCEU !</p>'
           point = 1
-          played = 'Tesoura corta o Papel...'
+          // played = 'Tesoura corta o Papel...'
         } else if (user === 'papel' && computer === 'tesoura') {
-          resultadoJogada.innerText = 'Tesoura corta Papel, você perdeu'
-          played = 'Tesoura corta o Papel...'
+          resultadoJogada.innerHTML = '<p>Tesoura corta Papel</p>.<p>Você perdeu...</p>'
+          // played = 'Tesoura corta o Papel...'
         }
         // empate
         else if (user === computer) {
           
-          resultadoJogada.innerText = 'Jogaram igual, empate na rodada'
-          played = 'Escolheram a mesma jogada !'
+          resultadoJogada.innerHTML = '<p>Jogaram igual</p><p>Empate na rodada</p>'
+          // played = 'Escolheram a mesma jogada !'
           point = 2
         } else {
           window.alert('caso não previsto')
@@ -119,7 +119,7 @@ function executa_game() {
         user = escolha.target.id
         audioPlim.play();
         computer = computerPlay();
-        jogadaUser.innerHTML = `Você escolheu <strong>${user}</strong>. Duda escolheu ...`
+        jogadaUser.innerHTML = `<p>Você escolheu <strong>${user}</strong></p><p>Duda escolheu ...</p>`
 
         videoArea.innerHTML = `<video autoplay id="videoDimensao"><source src="${computerVideo[computer].source}" type="video/mp4"></video></br><p id="legenda-video">${computerVideo[computer].titulo}</p>`
         
@@ -141,16 +141,18 @@ function executa_game() {
           //se vencedor user
           if(pontoUser === 5) {
             audioWin.play();
-            jogadaUser.innerText = "Você alcançou 5 vitórias! FIM DE JOGO";
+            // jogadaUser.innerText = "Você alcançou 5 vitórias! FIM DE JOGO";
             popHeader.innerText = "Você GANHOU !"
             popText.innerText = "Você fez 5 pontos primeiro."
-            popText2.innerText = `Você: ${pontoUser} | empates: ${pontoEmpate} | Duda: ${pontoPc}.`
+            // popText2.innerText = `Você: ${pontoUser} | empates: ${pontoEmpate} | Duda: ${pontoPc}.`
+            popText2.innerHTML = `<p>Empates: ${pontoEmpate}</p><p>Você: ${pontoUser}</p><p>Duda: ${pontoPc}</p>`            
           } else if(pontoPc === 5) {
             audioLoose.play();
-            jogadaUser.innerText = "Duda venceu 5 vezes, você perdeu! FIM DE JOGO";
+            // jogadaUser.innerText = "Duda venceu 5 vezes, você perdeu! FIM DE JOGO";
             popHeader.innerText = "Você PERDEU !"
             popText.innerText = "Duda fez 5 pontos primeiro."
-            popText2.innerText = `Você: ${pontoUser} | empates: ${pontoEmpate} | Duda: ${pontoPc}.`
+            // popText2.innerText = `Você: ${pontoUser} | empates: ${pontoEmpate} | Duda: ${pontoPc}.`
+            popText2.innerHTML = `<p>Empates: ${pontoEmpate}</p><p>Você: ${pontoUser}</p><p>Duda: ${pontoPc}</p>`
           }
           
           jogadaUser.innerText = "";
