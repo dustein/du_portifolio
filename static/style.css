@@ -82,12 +82,13 @@ li {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  font-size: 1.3rem;
+  font-size: 2.5rem;
   list-style: none;
   position: absolute;
   top: 4.5rem;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.85);
   padding: 1rem 2rem 1rem 2rem;
 }
 
@@ -136,32 +137,45 @@ main {
 .imagem-fundo {
   z-index: 0;
   position: absolute;
-  right: 0;
-  opacity: 0.5;
+  right: 2rem;
+  opacity: 0.3;
 }
 
 .imagem-fundo img {
-  height: 50vh
+  height: 80vh;
+}
+
+.sub-texto-first {
+  position: absolute;
+  bottom: 3rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#arrow-down {
+  font-size: 3rem;
+  padding-top: 1rem;
 }
 
 #eduardo {
-  font-size: 2.5rem;
+  font-size: 4rem;
   padding-bottom: 0.3rem;
+  padding-left: 0.5rem;
 }
 #stein {
-  font-size: 3.5rem;
-  padding-left: 2rem;
+  font-size: 5rem;
+  padding-left: 3rem;
   padding-bottom: 0.2em;
 }
 #developer {
-  padding-left: 3em;
+  padding-left: 3.5em;
   font-size: 2rem;
   font-style: italic;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2rem;
 }
 #description {
-  font-size: 1rem;
-  text-align: justify;
+  font-size: 1.2rem;
+  /* text-align: justify; */
   padding-right: 5rem;
 }
 
@@ -189,7 +203,7 @@ main {
 }
 
 .project-description {
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 /* THIRD SECTION start */

@@ -4,13 +4,21 @@
   box-sizing: border-box;
 }
 
-body {
-  min-width: 360px;
+:root {
+  --cor-fundo1: #fcf6bd;
+  --cor-fundo2: #faec6a;
+  --cor-header: #e4c1f9;
+  --cor-footer: #feb5d7;
+  --cor-jogada-user: #ff99c8;
+  --cor-jogada-maquina: #a9def9;
+  --cor-resultado: #ff99c8;
+  --cor-placar: #a9def9;
+  --cor-botao-jogar: rgba(88, 182, 189, 0.629);
 }
 
 body {
-  background-color: #fcf6bd;
-  background-image: linear-gradient(#f6f3db, #faec6a);
+  min-width: 360px;
+  background-image: linear-gradient(var(--cor-fundo1), var(--cor-fundo2));
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,7 +27,7 @@ body {
 }
 
 header {
-  background-color: #e4c1f9;
+  background-color: var(--cor-header);
   color: rgb(38, 38, 38);
   text-align: center;
   padding: 0.5rem;
@@ -41,7 +49,7 @@ header h1 {
 }
 
 .jogadaUser {
-  background-color: #ff99c8;
+  background-color: var(--cor-jogada-user);
   padding: 0.5rem;
   font-size: 1.3rem;
   text-align: center;
@@ -68,7 +76,7 @@ header h1 {
   text-shadow: 4px 3px rgba(241, 179, 224, 0.916);
   border: 5px solid transparent;
   border-radius: 5px;
-  background-color: rgba(88, 182, 189, 0.629);
+  background-color: var(--cor-botao-jogar);
   background-image: linear-gradient(to bottom right, #b3e8d6, #2be0a4), linear-gradient(125deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.6) 50%, rgba(235, 212, 212, 0) 53%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
@@ -99,7 +107,7 @@ header h1 {
 }
 
 #jogadaMaquina {
-  background-color: #a9def9;
+  background-color: var(--cor-jogada-maquina);
   width: 100%;
   text-align: center;
   padding: 0.5rem;
@@ -109,7 +117,7 @@ header h1 {
 
 #resultadoJogada {
   font-size: 1.5rem;
-  background-color: #ff99c8;
+  background-color: var(--cor-resultado);
   width: 100%;
   text-align: center;
   padding: 0.5rem;
@@ -117,7 +125,7 @@ header h1 {
 
 .placar {
   /* background-color: #b3e8d6; */
-  background-color: #a9def9;
+  background-color: var(--cor-placar);
   padding-top: 0.2rem;
   padding-bottom: 0.2rem;
   text-align: center;
@@ -166,7 +174,7 @@ header h1 {
 /* BOTOES DE COMANDO END */
 
 footer {
-  background-color: #feb5d7;
+  background-color: var(--cor-footer);
   color: rgb(69, 69, 69);
   line-height: 2rem;
   text-align: center;
@@ -277,7 +285,7 @@ footer {
   text-shadow: 4px 3px rgba(241, 179, 224, 0.916);
   border: 5px solid transparent;
   border-radius: 60px;
-  background-color: rgba(88, 182, 189, 0.629);
+  background-color: var(--cor-botao-jogar);
   background-image: linear-gradient(to bottom right, rgb(179, 232, 214), rgb(43, 224, 164)), linear-gradient(125deg, rgba(255,255,255,0) 45%, rgba(255,255,255,0.6) 50%, rgba(235, 212, 212, 0) 53%);
   background-origin: border-box;
   background-clip: padding-box, border-box;

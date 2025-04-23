@@ -70,6 +70,30 @@
   
   <footer>
     Um jogo por @DuStein
+
+    <!-- TESTE DE CORES -->
+    <div id="seletor-cores">
+      <label for="cor-fundo1">Cor de fundo:</label>
+      <input type="color" id="cor-fundo1" value="#fcf6bd">
+      
+      <label for="cor-header">Cor do cabeçalho:</label>
+      <input type="color" id="cor-header" value="#e4c1f9">
+      
+      <!-- Adicione mais inputs para as outras cores -->
+      
+      <button onclick="aplicarCores()">Aplicar cores</button>
+    </div>
+    
+    <script>
+    function aplicarCores() {
+      const novasCores = {
+        fundo: document.getElementById('cor-fundo1').value,
+        header: document.getElementById('cor-header').value,
+        // Adicione as outras cores aqui
+      };
+      atualizarCores(novasCores);
+    }
+    </script>
   </footer>
 
 </body>

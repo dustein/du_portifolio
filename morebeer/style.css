@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: azure;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-image: linear-gradient(white 50%, #fff75e, #ffda3d 70%);
+  padding-top: 0.2em;
+  padding-bottom: 1em;
+}
+
+main {
+  background-image: linear-gradient(#ffda3d 20%, #fff75e 50%, #ededed);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.first {
+  height: 100vh;
+  padding-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+}
+
+.title-app {
+  font-family: "Anton", serif;
+  font-size: 2rem;
+  letter-spacing: 0.3rem;
+  padding-top: 0.2em;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.size-icons {
+  min-width: 32vw;
+  min-height: 32vw;
+  border: solid 0.1px;
+  border-color: #ff99005a;
+  border-radius: 5%;
+  background-color: #ffcb0560;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.size-icons-manual {
+  width: 70%;
+  border: solid 0.1px;
+  border-color: #ff99005a;
+  border-radius: 5%;
+  background-color: #ffcb0560;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.size-icons:hover {
+  border: solid 1px;
+  border-color: #e8e5e0;
+}
+
+.icon-text-1 {
+  font-size: 1.2rem;
+  background-color: #ffcd0578;
+}
+
+.icon-text-2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-top: 0.2em;
+  padding-bottom: 0.2rem;
+  background-color: #ffcd0578;
+  border-radius: 25%;
+}
+
+.icon-text-2-manual {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 0.2em;
+  padding-bottom: 0.2rem;
+}
+
+/* .size-icons img {
+  max-width: max-content;
+} */
+/* .size-icons:active {
+  border: solid 4px;
+  border-color: #e8e5e0;
+} */
+
+.comands {
+  padding-top: 0,5em;
+  padding-bottom: 1em;
+}
+
+.comands button {
+  padding: 0.6rem;
+  border-radius: 10%;
+  background-color: #ffcb05;
+  font-size: 1.2rem;
+  letter-spacing: 0.4rem;
+}
+
+.second {
+  background-color: blue;
+}
+
+/* Imagens dos Icones */
+#icon-id-1 {
+  background-image: url(midia/bottle_600.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#icon-id-2 {
+  background-image: url(midia/can_473.png);
+  background-repeat: no-repeat;
+}
+
+#icon-id-3 {
+  background-image: url(midia/bottle_500.png);
+  background-repeat: no-repeat;
+}
+
+#icon-id-4 {
+  background-image: url(midia/can_355.png);
+  background-repeat: no-repeat;
+}
+
+/* #icon-id-5 {
+  background-image: url(midia/bottle_330.png);
+  background-repeat: no-repeat;
+} */
+
+#back-icon-id-5 {
+  background-image: url(midia/bottle_330.png);
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  position: absolute;
+}
+
+#icon-id-6 {
+  background-image: url(midia/can_250.png);
+  background-repeat: no-repeat;
+}
+
+/* Configuração Tablet e Notebook */
+@media screen and (min-width: 600px) {
+  .size-icons {
+    min-width: none;
+    min-height: auto;
+  }
+}

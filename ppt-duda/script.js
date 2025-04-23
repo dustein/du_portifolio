@@ -169,3 +169,10 @@ function executa_game() {
 
   rodada();
 }
+
+// ESQUEMA DE CORES
+function atualizarCores(novasCores) {
+  for (let [propriedade, valor] of Object.entries(novasCores)) {
+    document.documentElement.style.setProperty(`--cor-${propriedade}`, valor);
+  }
+}
