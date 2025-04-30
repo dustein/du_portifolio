@@ -25,17 +25,18 @@ header {
   padding: 0.5em;
 }
 
-#i-code{
-  font-size: 1.2rem;
+#logo-code {
+  height: 3rem;
+  padding-right: 0.8rem;
 }
+
 
 li {
   list-style: none;
 }
 
 .logo {
-  font-size: 1.5rem;
-  /* letter-spacing: 0.2rem; */
+  font-size: 1.8rem;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -206,6 +207,10 @@ main {
   font-size: 2rem;
 }
 
+.project-image {
+  max-width: 60vw;
+}
+
 /* THIRD SECTION start */
 
 .third {
@@ -233,6 +238,15 @@ main {
 
 .botton-links {
   padding-left: 0.5rem;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.symbols-svg {
+  height: 2rem;
+  padding-right: 1rem;
 }
 
 /* THIRD SECTION end */
