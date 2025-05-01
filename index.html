@@ -23,7 +23,7 @@
 <body>
   <header>
     <div class="logo">
-      <span id="logo-code">&lt;/&gt;</span><span id="du">Du</span>Stein
+      <a href="/index.html"><span id="logo-code">&lt;/&gt;</span><span id="du">Du</span>Stein</a>
     </div>
 
     <div class="nav">
@@ -34,8 +34,8 @@
         <a href="">
           <li>DuStein</li>
         </a>
-        <a href="">
-          <li>Contato</li>
+        <a href="mailto:steindu@gmail.com">
+          <li>e-Mail</li>
         </a>
       </ul>
       <a href="javascript:void(0);" onclick="menuToggle()"><img id="hamburger" src="static/burger-menu-svgrepo-com.svg" width="10" height="10" alt="menu icon"></a>
@@ -46,8 +46,8 @@
         <a href="https://dustein.com">
           <li>DuStein</li>
         </a>
-        <a href="#">
-          <li>Contato</li>
+        <a href="mailto:steindu@gmail.com">
+          <li>e-Mail</li>
         </a>
       </ul>    
     </div>
@@ -59,24 +59,26 @@
         <p id="eduardo">Eduardo</p>
         <p id="stein">Stein</p>
         <h1 id="developer">developer</h1>
-        <p id="description">I'm a Full Stack Software Engineer who loves Front End and passionate abut Back End.</p>
+        <p id="description">I'm a Full Stack Software Engineer who loves Front End and passionate about Back End.</p>
       </div>
       <div class="imagem-fundo">
         <img src="static/media/edu-face_background.svg" alt="background image the developer face etilized">
       </div>
       <div class="sub-texto-first">
-        <p>Some Projects to Show</p>
-        <i id="arrow-down" class="fa-solid fa-arrow-down"></i>
+        <a href="#second">
+          <p>Some Projects to Show</p>
+          <p id="arrow-down" style="writing-mode: vertical-rl;">>></p>
+        </a>
       </div>
 
     </div>
-    <div class="second">
+    <div id="second" class="second">
       <h2>Projects</h2>
         <div class="sec-content">
           <div class="projects" id="project1">
             <img class="project-image" src="static/media/ppt-duda-screenshot.png" alt="Screenshot rock paper scissors game">
             <p class="project-description">Rock Paper Scissors Game</p>
-            <p id="divisor">---  ---  ---  ---  ---</p>
+            <!-- <p id="divisor">---  ---  ---  ---  ---</p> -->
           </div>
           <!-- <div class="projects" id="project2">
             <img src="media/cerva.bmp" alt="">
@@ -95,21 +97,21 @@
     <div class="third">
       <ul>
         <li>
-          <a class="botton-links" href="...">
+          <a class="botton-links" href="mailto:steindu@gmail.com">
             <img class="symbols-svg" src="static/email.svg" alt="e-mail icon">
             e-Mail
           </a>
         </li>
         <li>
-          <a class="botton-links" href="...">
+          <a class="botton-links" href="https://www.linkedin.com/in/eduardo-s-7723701a3/">
             <img class="symbols-svg" src="static/linkedin.svg" alt="linkedin icon">
             LinkedIn
           </a>
         </li>
         <li>
-          <a class="botton-links" href="...">
+          <a class="botton-links" href="https://github.com/dustein">
             <img class="symbols-svg" src="static/github.svg" alt="github icon">
-            e-Mail
+            Github
           </a>
         </li>
       </ul>
