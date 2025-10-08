@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +13,10 @@ a {
 
 a:hover {
   color: rgb(100, 90, 240);
+}
+
+h2 {
+  font-size: 1.2rem;
 }
 
 /* ----------------------------------- */
@@ -60,6 +66,9 @@ li {
 }
 
 #hamburger {
+  /* DESATIVEI POR ENQUANTO */
+  display: none;
+  
   background-color: azure;
   width: 2rem;
   height: 2rem;
@@ -107,7 +116,7 @@ li {
 main {
   background-position: center;
   background-size: contain;
-  background-repeat: repeat;
+  /* background-repeat: repeat; */
   color: rgb(223, 224, 250);
   display: flex;
   flex-direction: column;
@@ -127,6 +136,7 @@ main {
   padding: 0.8em;
   font-size: 2rem;
   letter-spacing: 0.3rem;
+  position: relative;
 }
 
 .palavras {
@@ -148,13 +158,13 @@ main {
 
 .sub-texto-first {
   position: absolute;
-  bottom: 3rem;
-  font-size: 1.5rem;
+  bottom: 6rem;
+  font-size: 1rem;
   text-align: center;
 }
 
 #arrow-down {
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding-top: 1rem;
   letter-spacing: -1rem;
   display:inline-block;
@@ -195,7 +205,7 @@ main {
   background-color: #415a77;
   width: 100%;
   text-align: center;
-  padding: 1em;
+  padding: 1rem;
 }
 
 .second h2 {
@@ -213,7 +223,7 @@ main {
 }
 
 .project-description {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .project-image {
@@ -274,9 +284,19 @@ footer {
     font-size: 1.5rem;
   }
 
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
 
   #hamburger {
     display: none;
+  }
+
+  .project-image {
+  max-width: 300px;
+  height: auto;
   }
 
   .links-menu-800 {
@@ -289,24 +309,35 @@ footer {
   }
 
   .first {
-    padding: 1.5em;
-    font-size: 3.5rem;
+    /* padding: 1.5em; */
+    font-size: 2.5rem;
     height: 90vh;
+  }
+
+  .sub-texto-first {
+    position: absolute;
+    bottom: 2rem;
+    font-size: 0.8rem;
   }
 
   #developer {
     font-size: 2rem;
   }
-  
-  .second {
-    height: 100vh;
+
+  #arrow-down{
+    font-size: 1.5rem;
   }
 
   .sec-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  
+
+  .third {
+    padding: 0.2rem;
+  }
+
+  .botton-links {
+    font-size: 1rem;
+  }
 }
