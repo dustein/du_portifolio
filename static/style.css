@@ -1,5 +1,3 @@
-@import "tailwindcss";
-
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +10,8 @@ a {
 }
 
 a:hover {
-  color: rgb(100, 90, 240);
+  /* color: rgb(100, 90, 240); */
+  color: #a9bdd1;
 }
 
 h2 {
@@ -133,7 +132,7 @@ main {
   opacity: 0.05; */
   width: 100%;
   height: 100vh;
-  padding: 0.8em;
+  padding: 0.5em;
   font-size: 2rem;
   letter-spacing: 0.3rem;
   position: relative;
@@ -212,18 +211,34 @@ main {
   letter-spacing: 0.5rem;
 }
 
+.sec-content {
+  padding-top: 0.5em;
+}
+
+#projects-h2 {
+  border-bottom: solid rgba(153, 153, 241, 0.2);
+  padding-bottom: 0.2em;
+}
+
 .projects{
-  margin-top: 1em;
   width: auto;
-  /* border: solid; */
+  padding-bottom: 1em;
 }
 
 .projects img {
   border: solid gray;
+  border-radius: 2%;
 }
 
 .project-description {
   font-size: 1rem;
+  border: solid rgba(153, 153, 241, 0.2);
+  border-radius: 5%;
+  padding: 0.1rem;
+}
+
+.project-description:hover {
+  color: #a9bdd1;
 }
 
 .project-image {
@@ -258,7 +273,7 @@ main {
 
 .botton-links {
   padding-left: 0.5rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -293,11 +308,11 @@ footer {
   #hamburger {
     display: none;
   }
-
+/* 
   .project-image {
   max-width: 300px;
   height: auto;
-  }
+  } */
 
   .links-menu-800 {
     display: flex;
