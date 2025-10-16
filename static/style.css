@@ -10,7 +10,6 @@ a {
 }
 
 a:hover {
-  /* color: rgb(100, 90, 240); */
   color: #a9bdd1;
 }
 
@@ -156,7 +155,7 @@ main {
 
 .sub-texto-first {
   position: absolute;
-  bottom: 6rem;
+  bottom: 8rem;
   font-size: 1rem;
   text-align: center;
 }
@@ -238,6 +237,7 @@ main {
 
 .project-description:hover {
   color: #a9bdd1;
+  border: solid rgba(211, 211, 238, 0.753);
 }
 
 .project-image {
@@ -345,6 +345,11 @@ footer {
   .sec-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  .projects {
+    padding-left: 0.3em;
+    padding-right: 0.3em;
   }
 
   .third {
